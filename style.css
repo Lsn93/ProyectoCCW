@@ -36,12 +36,12 @@ html, body {
   padding-bottom: 1rem;
 }
 .btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #6648b1;
+  background-color: #915100;
+  border: 1px solid #915100;
 }
 .btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+  background-color: #583301;
+  border: 1px solid #583301;
 }
 .jumbotron {
   padding: 1rem;
@@ -61,16 +61,16 @@ html, body {
   margin-top: .3rem;
   margin-bottom: 1rem;
 }
-.fa-code {
-  color: #e54d26;
+.fa-gamepad {
+  color: #fc3939;
 }
-.fa-bold {
-  color: #563d7c;
+.fa-wifi {
+  color: #363ead;
 }
-.fa-css3 {
-  color: #2163af;
+.fa-coffee {
+  color: #915100;
 }
-.fa-code, .fa-bold, .fa-css3 {
+.fa-gamepad, .fa-wifi, .fa-coffee {
   font-size: 4em;
   margin: 1rem;
 }
@@ -164,7 +164,7 @@ hr.light-100 {
     top: 40%;
   }
   .carousel-caption h1 {
-    font-size: 250%;
+    font-size: 150%;
   }
   .carousel-caption h3 {
     font-size: 110%;
@@ -227,28 +227,6 @@ figure {
 [class*="col-"] {
     padding: 1rem;
 }
-
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
 
 
 
