@@ -1,5 +1,5 @@
 $(document).ready(function(){
   $("button.botonNegocios").click(function(){
-    $("table.tabla1").toggle(500);
+    $("table.tabla1").toggle();
   });
 });
