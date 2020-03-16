@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Proyecto Computacion en el cliente web</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="javascriptpagina.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navegación -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a href="index.html" class="navbar-brand"><img src="img/logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a href="index.html" class="nav-link">Inicio</a>
+				</li>
+				<li class="nav-item ">
+					<a href="acercade.html" class="nav-link">Nosotros</a>
+				</li>
+				<li class="nav-item ">
+					<a href="productos.html" class="nav-link">Productos</a>
+				</li>
+				<li class="nav-item ">
+					<a href="negocios.html" class="nav-link">Servicios para negocios</a>
+				</li>
+				<li class="nav-item ">
+					<a href="contacto.html" class="nav-link">Contacto</a>
+				</li>
+				<li class="nav-item ">
+					<a href="patio.html" class="nav-link">Patio de juegos</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!--Patio de juegos-->
+
+<div class="container-fluid">
+    <p style="font-weight: bold; font-size:25px;">Ejemplos de uso de JavaScript para acceder y manipular objetos DOM.</p>
+    <hr style="border-color: red;">
+    <button class="btn btn-primary" type="button" onclick="verURL()">Ver la dirección</button>
+    <p>La URL de este documento es: <br><span id="url"></span>.</p>
+    <hr style="border-color: red;">
+    
+    <button class="btn btn-primary" onclick="verDominio()">Ver dominio</button>
+    <p>El dominio de este documento es: <br><span id="dominio"></span>.</p>
+    <hr style="border-color: red;">
+    
+    <button class="btn btn-primary" onclick="verFechaMod()">Ver la última fecha de modificación</button>
+    <p>La última decha de modificación es: <br><span id="fechaMod"></span>.</p>
+    <hr style="border-color: red;">
+    
+    <button class="btn btn-primary" onclick="verTitulo()">Ver título del documento</button>
+    <p><span id="tituloDoc"></span>.</p>
+    <hr style="border-color: red;">
+
+    <button class="btn btn-primary" onclick="reemplazarContenido()">Cambiar contenido</button>
+    <p id="demo">Presiona el botón para cambiar el contenido de este documento</p>
+    <hr style="border-color: red;">
+
+    <p style="font-weight: bold; font-size:25px;">Ejemplos de uso de JavaScript para acceder y manipular objetos de entrada HTML.</p>
+    <hr style="border-color: red;">
+    <p>Presiona el botón para inhabilitar el boton "Hola"</p>
+    <button class="btn btn-primary" onclick="inhabilitarElemento()">Inhabilitar</button>
+    <form>
+        <input type="button" class="btn btn-warning" id="boton2" value="Hola">
+    </form>
+    <hr style="border-color: red;">
+
+    <form id="frm1">
+        <div class="form-group">
+            <label>Dirección de correo electrónico</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Teclea tu Email">
+          </div>
+          <div class="form-group">
+            <label>Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+          </div>
+        <input type="button" class="btn btn-warning" onclick="reiniciarValores()" value="Vaciar campos">
+    </form>
+    <hr style="border-color: red;">
+
+    <form>
+        <select class="form-control" id="miSeleccion">
+          <option>Manzana</option>
+          <option>Pera</option>
+          <option>Plátano</option>
+          <option>Naranja</option>
+        </select>
+        <br>
+        <input type="button" class="btn btn-primary" onclick="inhabilitarLista()" value="Inhabilitar lista">
+        <input type="button" class="btn btn-primary" onclick="habilitarLista()" value="Habilitar lista">
+    </form>
+    <hr style="border-color: red;">
+
+    Teclea tu nombre: <input class="form-control" type="text" id="pnombre" onblur="cambiarTextoMayus()">
+    <p>Cuando sales del campo anterior, se activa una función que cambia el texto a MAYÚSCULAS.</p>
+</div>
+<br>
+
+<!--- Pie de página -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<img src="img/w3newbie.png">
+				<hr class="light">
+				<p>618-100-0000</p>
+				<p>luisdavidspider@gmail.com</p>
+				<p>20 Noviembre #1000, Zona centro</p>
+				<p>Durango, DGO., 34000</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Nuestros horarios</h5>
+				<hr class="light">
+				<p>Lunes a viernes: 9am-10pm</p>
+				<p>Sabados: 9am-11pm</p>
+				<p>Domingos: 10am-11pm</p>
+			</div>
+			<div class="col-md-4">
+				<hr class="light">
+				<h5>Areas de servicio</h5>
+				<hr class="light">
+				<p>Durango, DGO., 34000</p>
+				<p>Próximamente Guadalajara, JAL, 36000</p>
+			</div>
+			<div class="col-12">
+				<hr class="light-100">
+				<h5>&copy; sitiodeprueba.com</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>
